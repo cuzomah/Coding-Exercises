@@ -1,0 +1,28 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TestScript : MonoBehaviour
+{
+    public Light myLight;
+    void Update ()
+    {
+      	if (Input.GetKey ("space"*3))
+        {
+            myLight.enabled=true;
+        }
+        else
+        {
+            myLight.enabled = false;
+        }
+     }   
+        /*if (Input.GetKeyDown ("space")&&("space")&&("space"))
+        {
+            myLight.enabled=!myLight.enabled;
+        }
+    }
+    void MyFunction ()
+    {
+        myLight.enabled=!myLight.enabled;
+    }*/
+}
