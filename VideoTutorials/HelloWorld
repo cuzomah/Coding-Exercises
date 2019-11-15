@@ -10,7 +10,8 @@ namespace HelloWorld
     {
         static void Main(string [] args)
         {
-            
-        }
+            Console.WriteLine("Hello World"); //Writes whats to print out in the line
+            Console.ReadLine(); //prints out line
+        }            
     }
 }
