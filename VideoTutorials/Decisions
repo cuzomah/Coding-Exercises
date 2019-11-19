@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string [] args)
+        {
+            Console.WriteLine("My Giveaway");
+            Console.WriteLine("Choose a number: 1, 2 or 3.");
+            String userValue = Console.ReadLine();
+
+            if(userValue == 2)
+            {
+                Console.WriteLine("Congratulations! You won a car!")
+            }
+            
+        }      
+    }
+}

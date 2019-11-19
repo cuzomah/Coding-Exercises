@@ -1,8 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace HelloWorld
 {
@@ -11,7 +8,7 @@ namespace HelloWorld
         static void Main(string [] args)
         {
             Console.WriteLine("Hello World"); //Writes whats to print out in the line
-            Console.ReadLine(); //prints out line
+            Console.ReadLine(); //tells the console to wait for an input from the user
         }            
     }
 }
