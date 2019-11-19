@@ -4,21 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HelloWorld
+namespace Decisions
 {
-    class Program
+    class Decisions
     {
         static void Main(string [] args)
         {
-            Console.WriteLine("My Giveaway");
-            Console.WriteLine("Choose a number: 1, 2 or 3.");
-            String userValue = Console.ReadLine();
+         	Console.WriteLine("My Giveaway");
+			Console.WriteLine("Choose a door: 1, 2 or 3.");
+			string userValue = Console.ReadLine();
 
-            if(userValue == 2)
-            {
-                Console.WriteLine("Congratulations! You won a car!")
-            }
-            
+			if(userValue == "2")
+				Console.WriteLine ("Congratulations! You won a car!");
+            else if (userValue == "1")
+                Console.WriteLine("Congratulations! You won a new house!");
+            else if (userValue == "3")
+                Console.WriteLine("Aw sorry. Looks like there's nothing behind this door.");
+            else
+				Console.WriteLine ("Please pick either door 1,2 or 3");
+            //This code uses a combinations of if, else if, and else statements (decision statements)
+            //This gives the user an answer based on whatever their input is.
         }      
     }
 }
