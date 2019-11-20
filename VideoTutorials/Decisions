@@ -6,24 +6,33 @@ using System.Threading.Tasks;
 
 namespace Decisions
 {
-    class Decisions
-    {
-        static void Main(string [] args)
-        {
-         	Console.WriteLine("My Giveaway");
+	class Decisions
+	{
+		static void Main(string [] args)
+		{
+			/*Console.WriteLine("My Giveaway");
 			Console.WriteLine("Choose a door: 1, 2 or 3.");
 			string userValue = Console.ReadLine();
 
 			if(userValue == "2")
 				Console.WriteLine ("Congratulations! You won a car!");
-            else if (userValue == "1")
-                Console.WriteLine("Congratulations! You won a new house!");
-            else if (userValue == "3")
-                Console.WriteLine("Aw sorry. Looks like there's nothing behind this door.");
-            else
-				Console.WriteLine ("Please pick either door 1,2 or 3");
-            //This code uses a combinations of if, else if, and else statements (decision statements)
-            //This gives the user an answer based on whatever their input is.
-        }      
-    }
+			else if (userValue == "1")
+				Console.WriteLine("Congratulations! You won a new house!");
+			else if (userValue == "3")
+				Console.WriteLine("Aw sorry. Looks like there's nothing behind this door.");
+			else
+				Console.WriteLine ("Please pick either door 1,2 or 3");*/
+			//This code uses a combinations of if, else if, and else statements (decision statements)
+			//This gives the user an answer based on whatever their input is.
+
+			Console.WriteLine("Welcome to my giveaway!");
+			Console.WriteLine("Choose a door: 1, 2 or 3.");
+			string userValue = Console.ReadLine ();
+			string prize = (userValue == "1") ? "pair of Airpods!": "paperclip :(";
+			// Normal Way --> Console.WriteLine("you won a " + prize);
+			Console.WriteLine("you won a {0}", prize); //<--- uses the replacement method
+			Console.ReadLine();
+
+		}      
+	}
 }
