@@ -1,0 +1,24 @@
+using System;
+
+namespace Variables
+{
+	class Variables
+	{
+		public static void Main(string[] args)
+		{
+			/*int x = 7;
+			int y = x+3;
+
+			Console.WriteLine (y);
+			Console.ReadLine ();*/
+
+			Console.WriteLine ("What is your name?");
+			Console.Write ("Type your first name here: ");
+			string firstName = Console.ReadLine ();
+			Console.Write ("Type your last name here: ");
+			string lastName = Console.ReadLine ();
+
+			Console.WriteLine ("Hello {0} {1}. Nice to meet you!", firstName, lastName);
+		}
+	}
+}
