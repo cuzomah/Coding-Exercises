@@ -1,0 +1,24 @@
+using System;
+
+namespace ForIteration
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+			for (int i = 0; i < 10; i++) 
+			{
+				Console.WriteLine (i);
+				if (i == 7) 
+				{
+					Console.Write ("Found seven!");
+					break;
+				}
+				/*Here I use the for loop statement to print out a set sequence of numbers, 1-9,
+				 * all on seperate lines. The if condition imbedded in the for loop also makes it so that 
+				 * when seven is printed, this statement will be as well and stops the program.*/
+			}
+			Console.ReadLine ();
+		}
+	}
+}
