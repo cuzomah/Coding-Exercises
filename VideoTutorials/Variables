@@ -15,10 +15,14 @@ namespace Variables
 			Console.WriteLine ("What is your name?");
 			Console.Write ("Type your first name here: ");
 			string firstName = Console.ReadLine ();
+
 			Console.Write ("Type your last name here: ");
 			string lastName = Console.ReadLine ();
 
 			Console.WriteLine ("Hello {0} {1}. Nice to meet you!", firstName, lastName);
+
+			/*This program above is a short sequence that asks the user what their full name is and then stores
+			 *the input data in two different variables (firstName and lastName). The final product is a line 
+			 *that prints a greeting statement based on the two variables.*/
 		}
 	}
-}
