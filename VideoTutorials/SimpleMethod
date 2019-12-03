@@ -1,0 +1,18 @@
+using System;
+
+namespace SimpleMethod
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+			HelloWorld ();
+		}
+	
+	// Creating the method  
+		public static void HelloWorld()
+		{
+			Console.WriteLine ("Hello World!");
+		}
+	}
+}
