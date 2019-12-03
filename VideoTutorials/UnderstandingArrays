@@ -1,0 +1,54 @@
+using System;
+
+namespace UnderstandingArrays
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+		// Longer format to making an array
+			int[] numbers = new int[5];
+
+			numbers [0] = 4;
+			numbers [1] = 8;
+			numbers [2] = 15;
+			numbers [3] = 16;
+			numbers [4] = 23;
+
+			Console.WriteLine (numbers [1]);
+			Console.WriteLine (numbers.Length);
+			Console.WriteLine ();
+
+
+		//Simplified format to make an array
+		//	int[] values = new int[] {4, 7, 24, 31, 55, 76};
+
+		//Can also be used with other data types, strings for example
+			string[] names = new string[] {"Johnny Boy", "David", "Manny", "Betty", "Lucy"};
+
+			/*for (int i = 0; i < names.Length; i++) 
+			{
+				Console.WriteLine(names[i]);
+			}*/
+		
+		// This is a much simpler method of looping through the data in arrays
+			foreach (string name in names) 
+			{
+				Console.WriteLine (name);
+			}
+				Console.WriteLine ();
+
+		// Lastly, this is a method that can use arrays to effectively reverse strings
+			string palindrome = Console.ReadLine();
+			char[] charArray = palindrome.ToCharArray();
+			Array.Reverse (charArray);
+
+			Console.WriteLine ();
+
+			foreach (char palindromeChar in charArray) 
+			{
+				Console.Write (palindromeChar);
+			}
+		}
+	}
+}
