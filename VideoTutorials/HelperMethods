@@ -1,0 +1,66 @@
+using System;
+
+namespace HelperMethods
+{
+	class MainClass
+	{
+		public static void Main (string[] args)
+		{
+			Console.Write ("What is your first name?");
+			string firstName = Console.ReadLine();
+
+			Console.Write ("What is your last name?");
+			string lastName = Console.ReadLine();
+
+			Console.Write ("What city do you live in?");
+			string city = Console.ReadLine();
+
+			/*Console.Write ("Reversed Results: ");
+			ReverseString (firstName);
+			ReverseString (lastName);
+			ReverseString (city);*/
+
+			string reversedFirstName = ReverseString (firstName);
+			string reversedLastName = ReverseString (lastName);
+			string reversedCity = ReverseString (city);
+
+			Console.Write (String.Format ("{0} {1} {2}", 
+				reversedFirstName, reversedLastName, reversedCity));
+		}
+
+		// created a method for reversing strings using the array method. Not very reusable.
+		private static void ReverseString()
+		{
+			string message = "Hello World!";
+			char[] messageArray = message.ToCharArray ();
+			Array.Reverse (messageArray);
+			foreach (char item in messageArray) 
+			{
+				Console.Write (item);
+			}
+		}
+			// Making this method more reusable by placing an input parameter for the method
+			//Now there are two ways in which I can invoke the reverse string Method:
+			// 1) with no parameters () 2) With as string parameter(string message) 
+
+		/*private static void ReverseString(string message)
+		{
+			char[] messageArray = message.ToCharArray ();
+			Array.Reverse (messageArray);
+			foreach (char item in messageArray) 
+			{
+				Console.Write (item);
+			}
+			Console.Write (" ");
+		}*/
+
+		//Using a different return type other than void
+
+		private static string ReverseString(string message)
+		{
+			char[] messageArray = message.ToCharArray ();
+			Array.Reverse (messageArray);
+			return String.Concat (messageArray);
+		}
+	}
+}
