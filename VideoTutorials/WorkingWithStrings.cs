@@ -31,9 +31,28 @@ namespace WorkingWithStrings
 			string randomNumber = String.Format ("Phone number:{0:(###)###-####}", 3018764321);
 			Console.WriteLine (randomNumber);*/
 
-			string favoriteLyric = "";
+			string favoriteLyric = " That was the summer we learned to love the great outdoors. ";
+//			favoriteLyric = favoriteLyric.Substring (6,14);
+//			Console.WriteLine (favoriteLyric);
+			favoriteLyric = favoriteLyric.Replace (" ", "--");
+			Console.WriteLine (favoriteLyric);
+
+			string myString = "  We Real Cool  "; 
+			myString = String.Format ("Length of String before: {0}, length after {1}",
+				myString.Length, myString.Trim ().Length);
+			Console.WriteLine (myString);
 
 
+//			*More effecient way to concantenate strings, but I don't think monodev has the String builder class*
+
+			StringBuilder myString = new StringBuilder ();
+
+			for (int i = 0; i < 100; i++) 
+			{
+				myString.Append ("--");
+				myString.Append (i);
+			}
+			Console.WriteLine (myString);
 		}
 	}
 }
