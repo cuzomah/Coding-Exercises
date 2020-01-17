@@ -20,6 +20,9 @@ namespace ObjectLifetime
 
 			myOtherCar = null; // Removes this access point to the specific space in memory
 
+			Car myBestCar = new Car ("Toyota", "Camry", 2012, "Royal Blue");
+			Car.MyMethod ();
+
 
 		}
 	}
@@ -31,9 +34,22 @@ namespace ObjectLifetime
 		public int Year { get; set; }
 		public string Color { get; set; }
 
-		public Car() // Constructor
+		public Car ()
 		{
 			Make = "Toyota";
+		}
+
+		public Car(string make, string model, int year, string color) // Constructor
+		{
+			Make = make;
+			Model = model;
+			Year = year;
+			Color = color;
+		}
+
+		public static void MyMethod()
+		{
+			Console.WriteLine("This is a static method");
 		}
 	}
 }
